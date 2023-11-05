@@ -1,5 +1,5 @@
 bulbasaur = '''
-Bulbasaur
+Bulbasaur:
                                            /\
                         _,.------....___,' ',.-.
                      ,-'          _,.--"        |
@@ -31,7 +31,7 @@ Bulbasaur
 '''
 
 ivysaur = '''
-Ivysaur
+Ivysaur:
                                ,'"`.,./.
                              ,'        Y',\"..
                            ,'           \\  | \\
@@ -67,7 +67,7 @@ Ivysaur
 '''
 
 venusaur = '''
-Venusaur
+Venusaur:
                            _._       _,._
                         _.'   `. ' .'   _`.
                 ,"""/`""-.-.,/. ` V'\-,`.,--/""""-..
@@ -102,7 +102,7 @@ Venusaur
 '''
 
 charmander = '''
-Charmander
+Charmander:
               _.--""`-..
             ,'          `.
           ,'          __  `.
@@ -140,7 +140,7 @@ Charmander
 '''
 
 charmeleon = '''
-Charmeleon
+Charmeleon:
                       ,-'\`
                   ,"'    j
            __....+       /               .
@@ -180,7 +180,7 @@ Charmeleon
 '''
 
 charizard = '''
-Charizard
+Charizard:
                  ."-,.__
                  `.     `.  ,
               .--'  .._,'"- '.
@@ -223,7 +223,7 @@ Charizard
 '''
 
 squirtle = '''
-Squirtle
+Squirtle:
                _,........__
             ,-'            "`-.
           ,'                   `-.
@@ -260,7 +260,7 @@ Squirtle
 '''
 
 watortle = '''
-Wartortle
+Wartortle:
      __                                _.--"7
     `. `--._                        ,-'_,-  ,'
      ,'  `-.`-.                   /' .'    ,|
@@ -299,7 +299,7 @@ Wartortle
                                     `---'--.,'"`'
 '''
 blastoise = '''
-Blastoise
+Blastoise:
                        _
             _,..-"""""--' ,-".
           ,'      __.. --',  |
@@ -339,7 +339,7 @@ Blastoise
 '''
 
 pikachu = '''
-Pikachu
+Pikachu:
                                              ,-.
                                           _.|  '
                                         .'  | /
@@ -386,7 +386,7 @@ Pikachu
 '''
 
 raichu = '''
-Raichu
+Raichu:
                                         _,--""\"`---...__
                             _.---"\"""`-'   .-""`"-.._`-._
                 _,.-----.,-"         .".". `-.           "---`.

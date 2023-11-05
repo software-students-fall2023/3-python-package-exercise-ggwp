@@ -1,6 +1,6 @@
 import random
 
-def picture(pokemon):
+def p_pic(pokemon):
     pokemon_list = ["charmander", "squirtle", "bulbasaur", "pikachu"]
     random_pokemon = random.choice(pokemon_list)
     if random_pokemon == "charmander":
@@ -150,7 +150,7 @@ def picture(pokemon):
         print("               ,'           /\n")
         print("             _'....----\"\"\"\"\"\n")
 
-def evolve(pokemon):
+def p_evo(pokemon):
     if pokemon.lower() == "evolve charmander":
         print("Charmeleon: \n")
         print("                      ,-'`\\\n")
@@ -411,7 +411,7 @@ def evolve(pokemon):
     else:
         print("Pokemon not found.")
 
-def type(pokemon):
+def p_type(pokemon):
     if pokemon.lower() == "charmander type" or pokemon.lower() == "charmeleon type" or pokemon.lower() == "charizard type":
         print("Fire")
     elif pokemon.lower() == "squirtle type" or pokemon.lower() == "wartortle type" or pokemon.lower() == "blastoise type":
@@ -423,7 +423,7 @@ def type(pokemon):
     else:
         print("Pokemon not found.")
 
-def number(pokemon):
+def p_num(pokemon):
     if pokemon.lower() == "charmander number":
         print("4")
     elif pokemon.lower() == "charmeleon number":

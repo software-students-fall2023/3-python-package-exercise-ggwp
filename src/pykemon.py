@@ -1,10 +1,10 @@
 import random
-
+from ascii_art_pykemon import pokemons 
 def p_pic(pokemon):
     pokemon_list = ["charmander", "squirtle", "bulbasaur", "pikachu"]
     random_pokemon = random.choice(pokemon_list)
     if random_pokemon == "charmander":
-        print("Charmader: \n")
+        print("Charmander: \n")
         print("              _.--\"\"`-..\n")
         print("            ,'          `.\n")
         print("          ,'          __  `.\n")

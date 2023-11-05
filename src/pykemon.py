@@ -12,7 +12,7 @@ def p_pic(pokemon):
         return pokemons["squirtle"]
     elif pokemon.lower() == "pikachu":
         return pokemons["pikachu"]
-    
+
 def p_evo(pokemon):
     if pokemon.lower() == "evolve bulbasaur":
         return pokemons["ivysaur"]

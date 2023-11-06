@@ -142,4 +142,23 @@ class Tests:
         assert(out=="Pokemon not found."), f"should return error message for invalid input"
         out = pykemon.p_evo(5)
         assert(out=="Pokemon not found."), f"should return error message for invalid type"
+    def test_p_pic_invalidin(self):
+        out = pykemon.p_pic("")
+        assert(out=="Pokemon not found."), f"should return error message for an empty string"
+        out = pykemon.p_pic("ewasdf")
+        assert(out=="Pokemon not found."), f"should return error message for invalid input"
+        out = pykemon.p_pic(5)
+        assert(out=="Pokemon not found."), f"should return error message for invalid type"
+    def test_p_pic_bulbasaur(self):
+        out = pykemon.p_pic("")
+        assert(out==pykemon.pokemons["bulbasaur"]), f"should return a bulbasaur, instead returned {out}"
+    def test_p_pic_charmander(self):
+        out = pykemon.p_pic("")
+        assert(out==pykemon.pokemons["charmander"]), f"should return a charmander, instead returned {out}"
+    def test_p_pic_squirtle(self):
+        out = pykemon.p_pic("")
+        assert(out==pykemon.pokemons["squirtle"]), f"should return a squirtle, instead returned {out}"
+    def test_p_pic_pikachu(self):
+        out = pykemon.p_pic("")
+        assert(out==pykemon.pokemons["pikachu"]), f"should return a pikachu, instead returned {out}"
     

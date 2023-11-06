@@ -422,7 +422,7 @@ Raichu:
                       `"-'__/
 '''
 
-pokemons={
+pokemons = {
     bulbasaur:bulbasaur,
     ivysaur:ivysaur,
     venusaur:venusaur,

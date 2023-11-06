@@ -1,5 +1,3 @@
-import random
-
 bulbasaur = '''
 Bulbasaur:
                                            /\
@@ -440,16 +438,16 @@ pokemons = {
 }
 
 def p_pic(pokemon):
-    pokemon_list = ["charmander", "squirtle", "bulbasaur", "pikachu"]
-    random_pokemon = random.choice(pokemon_list)
-    if random_pokemon == "bulbasaur":
+    if pokemon.lower() == "bulbasaur":
         return pokemons["bulbasaur"]
-    elif random_pokemon == "charmander":
+    elif pokemon.lower() == "charmander":
         return pokemons["charmander"]
-    elif random_pokemon == "squirtle":
+    elif pokemon.lower() == "squirtle":
         return pokemons["squirtle"]
     elif pokemon.lower() == "pikachu":
         return pokemons["pikachu"]
+    else:
+        return "Pokemon not found, please try bulbasaur, charmander, squirtle, or pikachu."
 
 def p_evo(pokemon):
     if pokemon.lower() == "evolve bulbasaur":

@@ -9,4 +9,4 @@ class Tests:
     """
     expected = True # the value we expect to be present
     actual = True # the value we see in reality
-    assert actual == expected, "sanity check complete"
+    assert actual == expected, "Expected True to be equal to True!"

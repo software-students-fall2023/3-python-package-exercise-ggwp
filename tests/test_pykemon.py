@@ -1,7 +1,8 @@
 import pytest
-from pykemon import pykemon
+from src.pykemon import pykemon
 class Tests:
     def test_sanity_check(self):
+        assert(pykemon.pokemons), "able to get pokemons"
         expected = True 
         actual = True 
         assert actual == expected, "sanity check incomplete."
@@ -114,26 +115,26 @@ class Tests:
     def test_p_evo(self):
         out = pykemon.p_evo("evolve bulbasaur")
         assert(out==pykemon.pokemons["ivysaur"]), f"wrong pokemon. pokemon = bulbasaur"
-        out = pykemon.p_type("evolve ivysaur")
+        out = pykemon.p_evo("evolve ivysaur")
         assert(out==pykemon.pokemons["venusaur"]), f"wrong pokemon. pokemon = ivysaur"
-        out = pykemon.p_type("evolve charmander")
+        out = pykemon.p_evo("evolve charmander")
         assert(out==pykemon.pokemons["charmeleon"]), f"wrong pokemon. pokemon = charmander"
-        out = pykemon.p_type("evolve charmeleon")
+        out = pykemon.p_evo("evolve charmeleon")
         assert(out==pykemon.pokemons["charizard"]), f"wrong pokemon. pokemon = charmeleon"
-        out = pykemon.p_type("evolve squirtle")
+        out = pykemon.p_evo("evolve squirtle")
         assert(out==pykemon.pokemons["watortle"]), f"wrong pokemon. pokemon = squirtle"
-        out = pykemon.p_type("evolve wartortle")
+        out = pykemon.p_evo("evolve wartortle")
         assert(out==pykemon.pokemons["blastoise"]), f"wrong pokemon. pokemon = wartortle"
-        out = pykemon.p_type("evolve pikachu")
+        out = pykemon.p_evo("evolve pikachu")
         assert(out==pykemon.pokemons["raichu"]), f"wrong pokemon. pokemon = pikachu"
     def test_p_evo_noevo(self):
-        out = pykemon.p_type("evolve venusaur")
+        out = pykemon.p_evo("evolve venusaur")
         assert(out=="This pokemon does not evolve."), f"this pokemon should not be able to evolve."
-        out = pykemon.p_type("evolve raichu")
+        out = pykemon.p_evo("evolve raichu")
         assert(out=="This pokemon does not evolve."), f"this pokemon should not be able to evolve."
-        out = pykemon.p_type("evolve charizard")
+        out = pykemon.p_evo("evolve charizard")
         assert(out=="This pokemon does not evolve."), f"this pokemon should not be able to evolve."
-        out = pykemon.p_type("evolve blastoise")
+        out = pykemon.p_evo("evolve blastoise")
         assert(out=="This pokemon does not evolve."), f"this pokemon should not be able to evolve."
     def test_p_evo_invalidin(self):
         out = pykemon.p_evo("")
@@ -144,21 +145,21 @@ class Tests:
         assert(out=="Pokemon not found."), f"should return error message for invalid type"
     def test_p_pic_invalidin(self):
         out = pykemon.p_pic("")
-        assert(out=="Pokemon not found."), f"should return error message for an empty string"
+        assert(out=="Pokemon not found, please try bulbasaur, charmander, squirtle, or pikachu."), f"should return error message for an empty string"
         out = pykemon.p_pic("ewasdf")
-        assert(out=="Pokemon not found."), f"should return error message for invalid input"
+        assert(out=="Pokemon not found, please try bulbasaur, charmander, squirtle, or pikachu."), f"should return error message for invalid input"
         out = pykemon.p_pic(5)
-        assert(out=="Pokemon not found."), f"should return error message for invalid type"
+        assert(out=="Pokemon not found, please try bulbasaur, charmander, squirtle, or pikachu."), f"should return error message for invalid type"
     def test_p_pic_bulbasaur(self):
-        out = pykemon.p_pic("")
+        out = pykemon.p_pic("bulbasaur")
         assert(out==pykemon.pokemons["bulbasaur"]), f"should return a bulbasaur, instead returned {out}"
     def test_p_pic_charmander(self):
-        out = pykemon.p_pic("")
+        out = pykemon.p_pic("charmander")
         assert(out==pykemon.pokemons["charmander"]), f"should return a charmander, instead returned {out}"
     def test_p_pic_squirtle(self):
-        out = pykemon.p_pic("")
+        out = pykemon.p_pic("squirtle")
         assert(out==pykemon.pokemons["squirtle"]), f"should return a squirtle, instead returned {out}"
     def test_p_pic_pikachu(self):
-        out = pykemon.p_pic("")
+        out = pykemon.p_pic("pikachu")
         assert(out==pykemon.pokemons["pikachu"]), f"should return a pikachu, instead returned {out}"
     

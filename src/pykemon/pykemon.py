@@ -424,20 +424,21 @@ Raichu:
 '''
 
 pokemons = {
-    bulbasaur:bulbasaur,
-    ivysaur:ivysaur,
-    venusaur:venusaur,
-    charmander:charmander,
-    charmeleon:charmeleon,
-    charizard:charizard,
-    squirtle:squirtle,
-    watortle:watortle,
-    blastoise:blastoise,
-    pikachu:pikachu,
-    raichu:raichu,
+  'bulbasaur':bulbasaur,
+  'ivysaur':ivysaur,
+  'venusaur':venusaur,
+  'charmander':charmander,
+  'charmeleon':charmeleon,
+  'charizard':charizard,
+  'squirtle':squirtle,
+  'watortle':watortle,
+  'blastoise':blastoise,
+  'pikachu':pikachu,
+  'raichu':raichu,
 }
 
 def p_pic(pokemon):
+    pokemon = str(pokemon)
     if pokemon.lower() == "bulbasaur":
         return pokemons["bulbasaur"]
     elif pokemon.lower() == "charmander":
@@ -450,6 +451,7 @@ def p_pic(pokemon):
         return "Pokemon not found, please try bulbasaur, charmander, squirtle, or pikachu."
 
 def p_evo(pokemon):
+    pokemon = str(pokemon)
     if pokemon.lower() == "evolve bulbasaur":
         return pokemons["ivysaur"]
     elif pokemon.lower() == "evolve ivysaur":
@@ -459,15 +461,18 @@ def p_evo(pokemon):
     elif pokemon.lower() == "evolve charmeleon":
         return pokemons["charizard"]
     elif pokemon.lower() == "evolve squirtle":
-        return pokemons["wartortle"]
+        return pokemons["watortle"]
     elif pokemon.lower() == "evolve wartortle":
         return pokemons["blastoise"]
     elif pokemon.lower() == "evolve pikachu":
         return pokemons["raichu"]
+    elif pokemon.lower() == "evolve venusaur" or pokemon.lower() == "evolve raichu" or pokemon.lower() == "evolve charizard" or pokemon.lower() == "evolve blastoise":
+        return "This pokemon does not evolve."
     else:
         return "Pokemon not found."
 
 def p_type(pokemon):
+    pokemon = str(pokemon)
     if pokemon.lower() == "bulbasaur type" or pokemon.lower() == "ivysaur type" or pokemon.lower() == "venusaur type":
         return "Grass"
     elif pokemon.lower() == "charmander type" or pokemon.lower() == "charmeleon type" or pokemon.lower() == "charizard type":
@@ -480,6 +485,7 @@ def p_type(pokemon):
         return "Pokemon not found."
 
 def p_num(pokemon):
+    pokemon = str(pokemon)
     if pokemon.lower() == "bulbasaur number":
         return "1"
     elif pokemon.lower() == "ivysaur number":

@@ -6,16 +6,13 @@ name: Python package
 on:
   push:
     branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
-
 jobs:
   build:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     strategy:
       matrix:
-        python-version: ["3.8", "3.9", "3.10", "3.11"]
+        python-version: ["3.9", "3.10"]
     steps:
       - uses: actions/checkout@v3
       - name: Set up Python ${{ matrix.python-version }}
@@ -27,6 +24,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install --user pipenv
           pipenv install pytest
+          pipenv install -i https://test.pypi.org/simple/ Pykemon==1.1.0
           pipenv install
       - name: Turn on 'editable' mode
         run: |

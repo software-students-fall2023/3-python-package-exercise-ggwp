@@ -1,8 +1,8 @@
-import pykemon.pykemon 
+from pykemon import pykemonASCII
 
 
 def main():
-  line = pykemon.p_pic("pikachu")
+  line = pykemonASCII.p_pic("pikachu")
   print(line)
 
 if __name__ == '__main__':

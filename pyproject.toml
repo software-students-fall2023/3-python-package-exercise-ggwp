@@ -29,4 +29,4 @@ dev = ["pytest"]
 "Bug Tracker" = "https://github.com/software-students-fall2023/3-python-package-exercise-ggwp/issues"
 
 [project.scripts]
-examplepackagefb1258 = "pykemon.__main__:main"
+pykemon = "pykemon.__main__:main"

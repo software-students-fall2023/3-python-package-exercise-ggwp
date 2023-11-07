@@ -1,5 +1,6 @@
 import pytest
 from src.pykemon import pykemon
+
 class Tests:
     def test_sanity_check(self):
         assert(pykemon.pokemons), "able to get pokemons"

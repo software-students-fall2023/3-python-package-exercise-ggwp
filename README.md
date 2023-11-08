@@ -1,15 +1,14 @@
-[![Python package](https://github.com/software-students-fall2023/3-python-package-exercise-ggwp/actions/workflows/python-package.yml/badge.svg?branch=main)](https://github.com/software-students-fall2023/3-python-package-exercise-ggwp/actions/workflows/python-package.yml)
-A little exercise to create a Python package, build it, test it, distribute it, and use it. See [instructions](./instructions.md) for details.
+[![Python package](https://github.com/software-students-fall2023/3-python-package-exercise-ggwp/actions/workflows/python-package.yml/badge.svg?branch=main)](https://github.com/software-students-fall2023/3-python-package-exercise-ggwp/actions/workflows/python-package.yml)  
 # Pykemon Package Documentation
 
 - [Pykemon on Test PyPI](https://test.pypi.org/project/Pykemon/1.2.0/)
 
 ## Contributors
 
-- @AlvisYan2025
-- @Jason-SL-Zhang
-- @SpencerWPak
-- @HenryGreene10
+- [@AlvisYan2025](https://github.com/AlvisYan2025)
+- [@Jason-SL-Zhang](https://github.com/Jason-SL-Zhang)
+- [@SpencerWPak](https://github.com/SpencerWPak)
+- [@HenryGreene10](https://github.com/HenryGreene10)
 
 ## Installation
 
@@ -181,10 +180,43 @@ pykemonASCII.p_num("raichu number")
 ```
 ## Example File 
 An example python file that uses each of the functions can be found here: 
-https://github.com/software-students-fall2023/3-python-package-exercise-ggwp/blob/main/.gitignore
+https://github.com/software-students-fall2023/3-python-package-exercise-ggwp/blob/main/example.py
 Please make sure the environment is set up correctly before running this file. 
 ## How to Contribute
 
 To contribute to the project, visit the [GitHub repository](https://github.com/software-students-fall2023/3-python-package-exercise-ggwp). You can add new Pokemon with ASCII images and integrate them into the function.
+if you want to get the source code, set up the virtual environment, install dependencies, and build and test your package for themselves, here are the steps: 
+### clone the codebase 
+```bash
+git clone git@github.com:software-students-fall2023/3-python-package-exercise-ggwp.git
+```
+### set up virtual envrironment in editable mode
+Make sure pipenv is installed. 
+under the root directory of this package: 
+```bash
+python -m pipenv install -e . 
+```
+or 
+```bash
+python3 -m pipenv install -e . 
+```
+and start the virtual environment with:
+```bash
+python -m pipenv shell
+```
+or 
+```bash
+python3 -m pipenv shell
+```
+### change the source file 
+Make some changes. Maybe modify a fuction or add new pokemons. 
+### build your new code 
+Make sure build is installed. 
+```bash
+python -m build
+```
+or 
+```bash
+python3 -m build
 ```
 

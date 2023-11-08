@@ -188,6 +188,10 @@ To contribute to the project, visit the [GitHub repository](https://github.com/s
 if you want to get the source code, set up the virtual environment, install dependencies, and build and test your package for themselves, here are the steps: 
 ### clone the codebase 
 ```bash
+git clone https://github.com/nyu-software-engineering/python-package-example.git
+```
+or use SSH: 
+```bash
 git clone git@github.com:software-students-fall2023/3-python-package-exercise-ggwp.git
 ```
 ### set up virtual envrironment in editable mode

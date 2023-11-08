@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "Pykemon"
 description = "Package built with pypi to print images of pokemon"
-version = "1.2.0"
+version = "1.2.1"
 authors = [
   { name="Group GGWP", email="swp6940@gmail.com" },
 ]

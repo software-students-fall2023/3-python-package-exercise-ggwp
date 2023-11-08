@@ -1,7 +1,7 @@
 [![Python package](https://github.com/software-students-fall2023/3-python-package-exercise-ggwp/actions/workflows/python-package.yml/badge.svg?branch=main)](https://github.com/software-students-fall2023/3-python-package-exercise-ggwp/actions/workflows/python-package.yml)  
 # Pykemon Package Documentation
 
-- [Pykemon on Test PyPI](https://test.pypi.org/project/Pykemon/1.2.0/)
+- [Pykemon on Test PyPI](https://test.pypi.org/project/Pykemon/1.2.1/)
 
 ## Contributors
 
@@ -17,13 +17,13 @@ To install Pykemon, you can use [pipx](https://github.com/software-students-fall
 if you are using python 2: 
 
 ```bash
-python -m pipenv install -i https://test.pypi.org/simple/ Pykemon==1.2.0
+python -m pipenv install -i https://test.pypi.org/simple/ Pykemon==1.2.1
 ```
 
 if you are using python 3: 
 
 ```bash
-python3 -m pipenv install -i https://test.pypi.org/simple/ Pykemon==1.2.0
+python3 -m pipenv install -i https://test.pypi.org/simple/ Pykemon==1.2.1
 ```
 
 After installation, activate the virtual environment:
@@ -43,7 +43,7 @@ python3 -m pipenv shell
 If the module is not installed successfully, you may install it manually:
 
 ```bash
-pip install -i https://test.pypi.org/simple/ Pykemon==1.2.0
+pip3 install -i https://test.pypi.org/simple/ Pykemon==1.2.1
 ```
 
 ## Usage
